@@ -15,9 +15,8 @@ class ControlEscolarController extends Controller
      */
     public function index()
     {
-        //$registros = ControlEscolar::orderBy('id', 'DESC')->paginate(10);
-        //return view('controlEscolar')->with('registros', $registros);
-        return view('controlEscolar');
+        $registros = ControlEscolar::orderBy('id', 'DESC')->paginate(10);
+        return view('controlEscolar/controlEscolar')->with('registros', $registros);
     }
 
     /**
@@ -28,7 +27,7 @@ class ControlEscolarController extends Controller
     public function create()
     {
         $niveles = Nivel::all();
-        return view('controlEscolarCreate')->with('niveles', $niveles);
+        return view('controlEscolar/controlEscolarCreate')->with('niveles', $niveles);
     }
 
     /**

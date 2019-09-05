@@ -25,14 +25,21 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('fontawesome-free-5.9.0-web/css/all.min.css')}}">
+    <style>
+        .content-loader tr td {
+            white-space: nowrap;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+                <img src="{{asset('img/englishinlive.jpeg')}}" width="30px" alt="">
+                <div class="ml-3">
+                    <h5 class="mt-3">EnglishInLive</h5>
+                </div>
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

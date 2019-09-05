@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Calificaciones;
+use App\Bajas;
 use Illuminate\Http\Request;
 
-class CalificacionesController extends Controller
+class BajasController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class CalificacionesController extends Controller
      */
     public function index()
     {
-        return view('calificaciones/calificaciones');
+        return view('bajas/bajas');
     }
 
     /**
@@ -24,7 +24,7 @@ class CalificacionesController extends Controller
      */
     public function create()
     {
-        return view('calificaciones/calificacionesCreate');
+        return view('bajas/bajasCreate');
     }
 
     /**
@@ -41,10 +41,10 @@ class CalificacionesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Calificaciones  $calificaciones
+     * @param  \App\Bajas  $bajas
      * @return \Illuminate\Http\Response
      */
-    public function show(Calificaciones $calificaciones)
+    public function show(Bajas $bajas)
     {
         //
     }
@@ -52,10 +52,10 @@ class CalificacionesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Calificaciones  $calificaciones
+     * @param  \App\Bajas  $bajas
      * @return \Illuminate\Http\Response
      */
-    public function edit(Calificaciones $calificaciones)
+    public function edit(Bajas $bajas)
     {
         //
     }
@@ -64,10 +64,10 @@ class CalificacionesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Calificaciones  $calificaciones
+     * @param  \App\Bajas  $bajas
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Calificaciones $calificaciones)
+    public function update(Request $request, Bajas $bajas)
     {
         //
     }
@@ -75,10 +75,10 @@ class CalificacionesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Calificaciones  $calificaciones
+     * @param  \App\Bajas  $bajas
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Calificaciones $calificaciones)
+    public function destroy(Bajas $bajas)
     {
         //
     }

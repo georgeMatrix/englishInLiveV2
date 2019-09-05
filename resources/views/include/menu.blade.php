@@ -26,58 +26,43 @@
         <div class="scrollbar" id="style-1">
             <ul>
                 <li class="lightli">
-                    <a href="">
+                    <a href="{{route('controlEscolar.index')}}">
                         <i class="fa fa-users fa-lg text-danger"></i>
                         <span class="nav-text">CONTROL ESCOLAR</span>
                     </a>
                 </li>
                 <li class="lightli">
-                    <a href="">
-                        <!--<i class="fa fa-database fa-lg text-danger"></i>-->
+                    <a href="{{route('baseDeDatos.index')}}">
                         <i class="fa fa-server fa-lg text-danger"></i>
                         <span class="nav-text">BASE DE DATOS</span>
                     </a>
                 </li>
                 <li class="lightli">
-                    <a href="">
+                    <a href="{{route('calificaciones.index')}}">
                         <i class="fa fa-check-square fa-lg text-danger"></i>
                         <span class="nav-text">CALIFICACIONES</span>
                     </a>
                 </li>
                 <li class="lightli">
-                    <a href="">
+                    <a href="{{route('colegiaturas.index')}}">
                         <i class="fa fa-money-bill-alt fa-lg text-danger"></i>
                         <span class="nav-text">COLEGIATURAS</span>
                     </a>
                 </li>
 
                 <li class="lightli">
-                    <a href="">
+                    <a href="{{route('bajas.index')}}">
                         <i class="fa fa-level-down-alt fa-lg text-danger"></i>
                         <span class="nav-text">BAJAS</span>
                     </a>
                 </li>
 
-                <!--<li class="lightli">
-                    <a href="">
-                        <i class="fa fa-map-marked fa-lg text-danger"></i>
-                        <span class="nav-text">RUTAS</span>
+                <li class="lightli">
+                    <a href="{{route('certificaciones.index')}}">
+                        <i class="fa fa-file-medical-alt fa-lg text-danger"></i>
+                        <span class="nav-text">CERTIFICACIONES</span>
                     </a>
                 </li>
-
-                <li class="lightli">
-                    <a href="">
-                        <i class="fa fa-file-alt fa-lg text-danger"></i>
-                        <span class="nav-text">Carta Porte</span>
-                    </a>
-                </li>
-
-                <li class="lightli">
-                    <a href="">
-                        <i class="fa fa-file-alt fa-lg text-danger"></i>
-                        <span class="nav-text">Cuentas Por Cobrar</span>
-                    </a>
-                </li>-->
 
             </ul>
         </div>

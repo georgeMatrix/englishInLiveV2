@@ -14,7 +14,8 @@ class BaseDeDatosController extends Controller
      */
     public function index()
     {
-        //
+        $baseDatos = BaseDeDatos::orderBy('id', 'DESC')->paginate(10);
+        return view('baseDeDatos/baseDeDatos')->with('baseDatos', $baseDatos);
     }
 
     /**
@@ -24,7 +25,7 @@ class BaseDeDatosController extends Controller
      */
     public function create()
     {
-        //
+        return view('baseDeDatos/baseDeDatosCreate');
     }
 
     /**
@@ -35,7 +36,9 @@ class BaseDeDatosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //return $request;
+        BaseDeDatos::create($request->all());
+        return redirect('baseDeDatos');
     }
 
     /**
