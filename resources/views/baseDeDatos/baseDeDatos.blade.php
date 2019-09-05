@@ -22,7 +22,6 @@
                             <th>EDAD</th>
                             <th>INCORPORADOS</th>
                             <th>NIVEL</th>
-                            <th>MAESTRO</th>
                             <th>HORARIO_SEP</th>
                             <th>HORARIO</th>
                             <th>NOMBRE_COMPLETO_DEL_ALUMNO</th>
@@ -42,6 +41,7 @@
                         <tbody>
                         @foreach($baseDatos as $base)
                             <tr>
+                                <td>{{$base->id}}</td>
                                 <td>{{$base->grado}}</td>
                                 <td>{{$base->grupo}}</td>
                                 <td>{{$base->escolaridad}}</td>

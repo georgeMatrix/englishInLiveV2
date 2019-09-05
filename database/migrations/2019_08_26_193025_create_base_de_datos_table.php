@@ -31,7 +31,6 @@ class CreateBaseDeDatosTable extends Migration
             $table->string('celular');
             $table->string('facebook');
             $table->string('fecha_de_nacimiento');
-            $table->string('edad');
             $table->string('direccion');
             $table->string('municipio');
             $table->string('email');
