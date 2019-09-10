@@ -37,9 +37,10 @@
                         <div class="col-sm-6 mb-3 mb-sm-0">
                             <select name="niveles" id="niveles" class="form-control form-control-user">
                                 <option value="">Seleccione una opción</option>
-                                @foreach($niveles as $nivel)
-                                    <option value="{{$nivel->id}}">{{$nivel->nombre}}</option>
-                                @endforeach
+                                <option value="1">Ingles Comunicativo</option>
+                                <option value="2">Ingles Comunicativo Superior</option>
+                                <option value="3">Ingles Preintermedio</option>
+                                <option value="4">Ingles Intermedio</option>
                             </select>
                         </div>
                     </div>

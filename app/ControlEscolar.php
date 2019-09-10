@@ -22,8 +22,4 @@ class ControlEscolar extends Model
         'modulosAcreditados',
         'nombreCompleto'
     ];
-
-    public function nivelesMethod(){
-        return $this->belongsTo(Nivel::class, 'niveles');
-    }
 }

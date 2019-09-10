@@ -26,8 +26,8 @@ class ControlEscolarController extends Controller
      */
     public function create()
     {
-        $niveles = Nivel::all();
-        return view('controlEscolar/controlEscolarCreate')->with('niveles', $niveles);
+
+        return view('controlEscolar/controlEscolarCreate');
     }
 
     /**
@@ -38,6 +38,7 @@ class ControlEscolarController extends Controller
      */
     public function store(Request $request)
     {
+        //return $request;
         ControlEscolar::create($request->all());
         return redirect('controlEscolar');
     }

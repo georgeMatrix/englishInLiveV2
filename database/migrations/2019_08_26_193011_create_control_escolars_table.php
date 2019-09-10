@@ -15,8 +15,7 @@ class CreateControlEscolarsTable extends Migration
     {
         Schema::create('control_escolars', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('niveles');
-            $table->foreign('niveles')->references('id')->on('nivels');
+            $table->integer('niveles');
             $table->string('grupo');
             $table->string('escolaridad');
             $table->string('noControl');

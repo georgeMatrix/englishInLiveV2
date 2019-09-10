@@ -41,7 +41,7 @@
                                         <td>{{$registro->edad}}</td>
                                         <td>{{$registro->incorporados}}</td>
                                         <td>{{$registro->sexo}}</td>
-                                        <td>{{$registro->nivelesMethod->nombre}}</td>
+                                        <td>{{$registro->niveles}}</td>
                                         <td>{{$registro->maestro}}</td>
                                         <td>{{$registro->horarioSep}}</td>
                                         <td>{{$registro->curp}}</td>
