@@ -40,7 +40,39 @@
                         </tr>
                         </thead>
                         <tbody>
+                            @foreach($calificaciones as $calificacion)
+                            <tr>
+                                <td>{{$calificacion->id}}</td>
+                                <td>{{$calificacion->noControl}}</td>
+                                <td>{{$calificacion->maestro}}</td>
+                                <td>{{$calificacion->alumno}}</td>
 
+                                <td>{{$calificacion->icInicial1stTest}}</td>
+                                <td>{{$calificacion->icInicial2stTest}}</td>
+                                <td>{{$calificacion->icInicial3stTest}}</td>
+                                <td>{{$calificacion->icInicialPlataformaYtareas}}</td>
+                                <td>{{$calificacion->icInicialFinalScore}}</td>
+
+                                <td>{{$calificacion->icbSuperior1stTest}}</td>
+                                <td>{{$calificacion->icbSuperior2stTest}}</td>
+                                <td>{{$calificacion->icbSuperior3stTest}}</td>
+                                <td>{{$calificacion->icbSuperiorPlataformaYtareas}}</td>
+                                <td>{{$calificacion->icbSuperiorFinalScore}}</td>
+
+                                <td>{{$calificacion->icpIntermedio1stTest}}</td>
+                                <td>{{$calificacion->icpIntermedio2stTest}}</td>
+                                <td>{{$calificacion->icpIntermedio3stTest}}</td>
+                                <td>{{$calificacion->icpIntermedioPlataformaYtareas}}</td>
+                                <td>{{$calificacion->icpIntermedioFinalScore}}</td>
+
+                                <td>{{$calificacion->icIntermedio1stTest}}</td>
+                                <td>{{$calificacion->icIntermedio2stTest}}</td>
+                                <td>{{$calificacion->icIntermedio3stTest}}</td>
+                                <td>{{$calificacion->icIntermedioPlataformaYtareas}}</td>
+                                <td>{{$calificacion->icIntermedioFinalScore}}</td>
+
+                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

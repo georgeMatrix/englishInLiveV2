@@ -14,7 +14,9 @@ class CalificacionesController extends Controller
      */
     public function index()
     {
-        return view('calificaciones/calificaciones');
+        $calificaciones = Calificaciones::all();
+        return view('calificaciones/calificaciones')
+            ->with('calificaciones', $calificaciones);
     }
 
     /**
@@ -35,7 +37,8 @@ class CalificacionesController extends Controller
      */
     public function store(Request $request)
     {
-        return $request;
+        Calificaciones::create($request->all());
+        return redirect('calificaciones');
     }
 
     /**
