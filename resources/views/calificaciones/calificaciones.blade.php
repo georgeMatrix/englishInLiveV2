@@ -20,6 +20,7 @@
                             <th>1ST_TEST</th>
                             <th>2DO_TEST</th>
                             <th>3ER_TEST</th>
+                            <th>WORKBOOK</th>
                             <th>PLATAFORMA_Y_TAREAS</th>
                             <th>FINAL_SCORE</th>
                             <th>1ST_TEST</th>
@@ -50,6 +51,7 @@
                                 <td>{{$calificacion->icInicial1stTest}}</td>
                                 <td>{{$calificacion->icInicial2stTest}}</td>
                                 <td>{{$calificacion->icInicial3stTest}}</td>
+                                <td>{{$calificacion->workbook}}</td>
                                 <td>{{$calificacion->icInicialPlataformaYtareas}}</td>
                                 <td>{{$calificacion->icInicialFinalScore}}</td>
 
