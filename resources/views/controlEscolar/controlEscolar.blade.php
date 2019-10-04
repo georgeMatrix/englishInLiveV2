@@ -28,6 +28,7 @@
                                     <th>HORARIO</th>
                                     <th>MODULOS_ACREDITADOS</th>
                                     <th>NOMBRE_COMPLETO_DEL_ALUMNO</th>
+                                    <th>EDITAR</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -48,6 +49,7 @@
                                         <td>{{$registro->horario}}</td>
                                         <td>{{$registro->modulosAcreditados}}</td>
                                         <td>{{$registro->nombreCompleto}}</td>
+                                        <td><a href="{{route('controlEscolar.edit', $registro->id)}}" class="btn btn-info">Editar</a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>

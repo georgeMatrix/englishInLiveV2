@@ -36,6 +36,7 @@
                             <th>EMAIL</th>
                             <th>GRADO_DE_ESTUDIOS</th>
                             <th>COMO_TE_ENTERASTE</th>
+                            <th>EDITAR</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -64,6 +65,7 @@
                                 <td>{{$base->email}}</td>
                                 <td>{{$base->grado_estudios}}</td>
                                 <td>{{$base->como_te_enteraste}}</td>
+                                <td><a href="{{route('baseDeDatos.edit', $base->id)}}" class="btn btn-info">Editar</a></td>
                             </tr>
                         @endforeach
                         </tbody>

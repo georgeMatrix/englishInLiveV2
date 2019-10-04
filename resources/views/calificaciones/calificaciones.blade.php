@@ -38,6 +38,7 @@
                             <th>3ER_TEST</th>
                             <th>PLATAFORMA_Y_TAREAS</th>
                             <th>FINAL_SCORE</th>
+                            <th>EDITAR</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -72,6 +73,8 @@
                                 <td>{{$calificacion->icIntermedio3stTest}}</td>
                                 <td>{{$calificacion->icIntermedioPlataformaYtareas}}</td>
                                 <td>{{$calificacion->icIntermedioFinalScore}}</td>
+
+                                <td><a href="{{route('calificaciones.edit', $calificacion->id)}}" class="btn btn-info">Editar</a></td>
 
                             </tr>
                             @endforeach

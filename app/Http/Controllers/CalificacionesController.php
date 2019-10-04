@@ -58,9 +58,11 @@ class CalificacionesController extends Controller
      * @param  \App\Calificaciones  $calificaciones
      * @return \Illuminate\Http\Response
      */
-    public function edit(Calificaciones $calificaciones)
+    public function edit($id)
     {
-        //
+        $calificacion = Calificaciones::findOrFail($id);
+        return view('calificaciones/calificacionesEdit')
+            ->with('calificacion', $calificacion);
     }
 
     /**
@@ -70,9 +72,9 @@ class CalificacionesController extends Controller
      * @param  \App\Calificaciones  $calificaciones
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Calificaciones $calificaciones)
+    public function update(Request $request, $id)
     {
-        //
+        return $request;
     }
 
     /**

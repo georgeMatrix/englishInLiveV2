@@ -63,13 +63,13 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-4 mb-3 mb-sm-0">
-                                            <input min="0" max="20" type="number" class="form-control form-control-user" id="icInicialPlataformaYtareas" name="icInicialPlataformaYtareas" onfocusout="sumatoria()" placeholder="Plataforma y Tareas">
+                                            <input min="0" max="10" type="number" class="form-control form-control-user" id="icInicialPlataformaYtareas" name="icInicialPlataformaYtareas" onfocusout="sumatoria()" placeholder="Plataforma y Tareas">
                                         </div>
                                         <div class="col-sm-4 mb-3 mb-sm-0">
                                             <input min="0" max="10" type="number" class="form-control form-control-user" id="workbook" name="workbook" onfocusout="sumatoria()" placeholder="Workbook">
                                         </div>
                                         <div class="col-sm-4 mb-3 mb-sm-0">
-                                            <input disabled type="number" class="form-control form-control-user" id="icInicialFinalScore" name="icInicialFinalScore" onfocusout="sumatoria()" placeholder="Final Score">
+                                            <input readonly type="number" class="form-control form-control-user" id="icInicialFinalScore" name="icInicialFinalScore" onfocusout="sumatoria()" placeholder="Final Score">
                                         </div>
                                     </div>
 
@@ -99,10 +99,10 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="icbSuperiorPlataformaYtareas" onfocusout="sumatoriaIcBs()" name="icbSuperiorPlataformaYtareas" placeholder="Plataforma y Tareas">
+                                            <input min="0" max="20" type="number" class="form-control form-control-user" id="icbSuperiorPlataformaYtareas" onfocusout="sumatoriaIcBs()" name="icbSuperiorPlataformaYtareas" placeholder="Plataforma y Tareas">
                                         </div>
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="icbSuperiorFinalScore" onfocusout="sumatoriaIcBs()" name="icbSuperiorFinalScore" placeholder="Final Score">
+                                            <input readonly type="text" class="form-control form-control-user" id="icbSuperiorFinalScore" onfocusout="sumatoriaIcBs()" name="icbSuperiorFinalScore" placeholder="Final Score">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -119,21 +119,21 @@
                                     <h5>Inglés Comunicativo Pre Intermedio</h5>
                                     <div class="form-group row">
                                         <div class="col-sm-4">
-                                            <input type="text" class="form-control form-control-user" id="icpIntermedio1stTest" onfocusout="sumatoriaIcpi()" name="icpIntermedio1stTest" placeholder="1st test">
+                                            <input min="0" max="20" type="number" class="form-control form-control-user" id="icpIntermedio1stTest" onfocusout="sumatoriaIcpi()" name="icpIntermedio1stTest" placeholder="1st test">
                                         </div>
                                         <div class="col-sm-4">
-                                            <input type="text" class="form-control form-control-user" id="icpIntermedio2stTest" onfocusout="sumatoriaIcpi()" name="icpIntermedio2stTest" placeholder="2do test">
+                                            <input min="0" max="30" type="number" class="form-control form-control-user" id="icpIntermedio2stTest" onfocusout="sumatoriaIcpi()" name="icpIntermedio2stTest" placeholder="2do test">
                                         </div>
                                         <div class="col-sm-4">
-                                            <input type="text" class="form-control form-control-user" id="icpIntermedio3stTest" onfocusout="sumatoriaIcpi()" name="icpIntermedio3stTest" placeholder="3er test">
+                                            <input min="0" max="30" type="number" class="form-control form-control-user" id="icpIntermedio3stTest" onfocusout="sumatoriaIcpi()" name="icpIntermedio3stTest" placeholder="3er test">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="icpIntermedioPlataformaYtareas" onfocusout="sumatoriaIcpi()" name="icpIntermedioPlataformaYtareas" placeholder="Plataforma y Tareas">
+                                            <input min="0" max="20" type="number" class="form-control form-control-user" id="icpIntermedioPlataformaYtareas" onfocusout="sumatoriaIcpi()" name="icpIntermedioPlataformaYtareas" placeholder="Plataforma y Tareas">
                                         </div>
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="icpIntermedioFinalScore" onfocusout="sumatoriaIcpi()" name="icpIntermedioFinalScore" placeholder="Final Score">
+                                            <input readonly type="text" class="form-control form-control-user" id="icpIntermedioFinalScore" onfocusout="sumatoriaIcpi()" name="icpIntermedioFinalScore" placeholder="Final Score">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -151,21 +151,21 @@
                                     <h5>Inglés Comunicativo Intermedio</h5>
                                     <div class="form-group row">
                                         <div class="col-sm-4">
-                                            <input type="text" class="form-control form-control-user" id="icIntermedio1stTest" onfocusout="sumatoriaIci()" name="icIntermedio1stTest" placeholder="1st test">
+                                            <input min="0" max="20" type="number" class="form-control form-control-user" id="icIntermedio1stTest" onfocusout="sumatoriaIci()" name="icIntermedio1stTest" placeholder="1st test">
                                         </div>
                                         <div class="col-sm-4">
-                                            <input type="text" class="form-control form-control-user" id="icIntermedio2stTest" onfocusout="sumatoriaIci()" name="icIntermedio2stTest" placeholder="2do test">
+                                            <input min="0" max="30" type="number" class="form-control form-control-user" id="icIntermedio2stTest" onfocusout="sumatoriaIci()" name="icIntermedio2stTest" placeholder="2do test">
                                         </div>
                                         <div class="col-sm-4">
-                                            <input type="text" class="form-control form-control-user" id="icIntermedio3stTest" onfocusout="sumatoriaIci()" name="icIntermedio3stTest" placeholder="3er test">
+                                            <input min="0" max="30" type="number" class="form-control form-control-user" id="icIntermedio3stTest" onfocusout="sumatoriaIci()" name="icIntermedio3stTest" placeholder="3er test">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="icIntermedioPlataformaYtareas" onfocusout="sumatoriaIci()" name="icIntermedioPlataformaYtareas" placeholder="Plataforma y Tareas">
+                                            <input min="0" max="20" type="number" class="form-control form-control-user" id="icIntermedioPlataformaYtareas" onfocusout="sumatoriaIci()" name="icIntermedioPlataformaYtareas" placeholder="Plataforma y Tareas">
                                         </div>
                                         <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="icIntermedioFinalScore" onfocusout="sumatoriaIci()" name="icIntermedioFinalScore" placeholder="Final Score">
+                                            <input readonly type="text" class="form-control form-control-user" id="icIntermedioFinalScore" onfocusout="sumatoriaIci()" name="icIntermedioFinalScore" placeholder="Final Score">
                                         </div>
                                     </div>
                                     <div class="form-group row">

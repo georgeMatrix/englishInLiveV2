@@ -58,9 +58,12 @@ class BaseDeDatosController extends Controller
      * @param  \App\BaseDeDatos  $baseDeDatos
      * @return \Illuminate\Http\Response
      */
-    public function edit(BaseDeDatos $baseDeDatos)
+    public function edit($id)
     {
-        //
+        $baseDeDatos = BaseDeDatos::findOrFail($id);
+        return view('baseDeDatos/baseDeDatosEdit')
+            ->with('baseDeDatos', $baseDeDatos);
+
     }
 
     /**
@@ -70,7 +73,7 @@ class BaseDeDatosController extends Controller
      * @param  \App\BaseDeDatos  $baseDeDatos
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, BaseDeDatos $baseDeDatos)
+    public function update(Request $request, $id)
     {
         //
     }

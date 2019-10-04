@@ -60,9 +60,11 @@ class ControlEscolarController extends Controller
      * @param  \App\ControlEscolar  $controlEscolar
      * @return \Illuminate\Http\Response
      */
-    public function edit(ControlEscolar $controlEscolar)
+    public function edit($id)
     {
-        //
+        $controlEscolar = ControlEscolar::findOrFail($id);
+        return view('controlEscolar/controlEscolarEdit')
+            ->with('controlEscolar', $controlEscolar);
     }
 
     /**
@@ -72,7 +74,7 @@ class ControlEscolarController extends Controller
      * @param  \App\ControlEscolar  $controlEscolar
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ControlEscolar $controlEscolar)
+    public function update(Request $request, $id)
     {
         //
     }
