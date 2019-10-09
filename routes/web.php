@@ -21,6 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('controlEscolar', 'ControlEscolarController');
 Route::resource('baseDeDatos', 'BaseDeDatosController');
 Route::resource('calificaciones', 'CalificacionesController');
-Route::resource('colegiaturas', 'ColegiaturaController');
+Route::resource('colegiaturas', 'ColegiaturasController');
 Route::resource('certificaciones', 'CertificacionesController');
 Route::resource('bajas', 'BajasController');

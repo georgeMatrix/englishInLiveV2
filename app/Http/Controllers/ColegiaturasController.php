@@ -14,7 +14,9 @@ class ColegiaturasController extends Controller
      */
     public function index()
     {
-        //
+        $colegiaturas = Colegiaturas::orderBy('id', 'DESC')->paginate(10);
+        return view('colegiaturas/colegiaturas')
+            ->with('colegiaturas', $colegiaturas);
     }
 
     /**
@@ -24,7 +26,7 @@ class ColegiaturasController extends Controller
      */
     public function create()
     {
-        //
+        return view('colegiaturas/colegiaturasCreate');
     }
 
     /**
@@ -35,7 +37,8 @@ class ColegiaturasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Colegiaturas::create($request->all());
+        return redirect('colegiaturas');
     }
 
     /**
@@ -55,9 +58,11 @@ class ColegiaturasController extends Controller
      * @param  \App\Colegiaturas  $colegiaturas
      * @return \Illuminate\Http\Response
      */
-    public function edit(Colegiaturas $colegiaturas)
+    public function edit($id)
     {
-        //
+        $colegiatura = Colegiaturas::findOrFail($id);
+        return view('colegiaturas/colegiaturasEdit')
+            ->with('colegiatura', $colegiatura);
     }
 
     /**
@@ -67,9 +72,11 @@ class ColegiaturasController extends Controller
      * @param  \App\Colegiaturas  $colegiaturas
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Colegiaturas $colegiaturas)
+    public function update(Request $request, $id)
     {
-        //
+        $colegiatura = $request->except(['_token', '_method']);
+        Colegiaturas::where('id', '=', $id)->update($colegiatura);
+        return redirect('colegiaturas');
     }
 
     /**

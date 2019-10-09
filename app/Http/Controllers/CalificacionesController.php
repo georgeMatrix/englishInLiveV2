@@ -74,7 +74,9 @@ class CalificacionesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return $request;
+        $calificacion = $request->except(['_token', '_method']);
+        Calificaciones::where('id', '=', $id)->update($calificacion);
+        return redirect('calificaciones');
     }
 
     /**

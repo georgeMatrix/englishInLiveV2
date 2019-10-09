@@ -63,7 +63,6 @@ class BaseDeDatosController extends Controller
         $baseDeDatos = BaseDeDatos::findOrFail($id);
         return view('baseDeDatos/baseDeDatosEdit')
             ->with('baseDeDatos', $baseDeDatos);
-
     }
 
     /**
@@ -75,7 +74,9 @@ class BaseDeDatosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $baseDatos = $request->except(['_token', '_method']);
+        BaseDeDatos::where('id', '=', $id)->update($baseDatos);
+        return redirect('baseDeDatos');
     }
 
     /**

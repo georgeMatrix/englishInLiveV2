@@ -76,7 +76,9 @@ class ControlEscolarController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $controlEscolar = $request->except(['_token', '_method']);
+        ControlEscolar::where('id', '=', $id)->update($controlEscolar);
+        return redirect('controlEscolar');
     }
 
     /**

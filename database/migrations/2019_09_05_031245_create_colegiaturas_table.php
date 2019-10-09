@@ -15,6 +15,11 @@ class CreateColegiaturasTable extends Migration
     {
         Schema::create('colegiaturas', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('colegiaturas');
+            $table->string('meses');
+            $table->string('inscripcion');
+            $table->string('libros');
+            $table->string('certificadoSep');
             $table->timestamps();
         });
     }
