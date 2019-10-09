@@ -25,23 +25,46 @@
                             <th>3ER_TEST</th>
                             <th>WORKBOOK</th>
                             <th>PLATAFORMA_Y_TAREAS</th>
+                            <th>PARTICIPATION</th>
+                            <th>UNDERSTANDING_OF_CONCEPTS_PRINCIPLES</th>
+                            <th>APPLICATION_OF_CONCEPTS</th>
+                            <th>PRESENTATION_SKILL</th>
+                            <th>TEST_SCORE</th>
+
                             <th>FINAL_SCORE</th>
                             <th>1ST_TEST</th>
                             <th>2DO_TEST</th>
                             <th>3ER_TEST</th>
                             <th>PLATAFORMA_Y_TAREAS</th>
                             <th>FINAL_SCORE</th>
+                            <th>PARTICIPATION</th>
+                            <th>UNDERSTANDING_OF_CONCEPTS_PRINCIPLES</th>
+                            <th>APPLICATION_OF_CONCEPTS</th>
+                            <th>PRESENTATION_SKILL</th>
+                            <th>TEST_SCORE</th>
+
                             <th>1ST_TEST</th>
                             <th>2DO_TEST</th>
                             <th>3ER_TEST</th>
                             <th>PLATAFORMA_Y_TAREAS</th>
                             <th>FINAL_SCORE</th>
+                            <th>PARTICIPATION</th>
+                            <th>UNDERSTANDING_OF_CONCEPTS_PRINCIPLES</th>
+                            <th>APPLICATION_OF_CONCEPTS</th>
+                            <th>PRESENTATION_SKILL</th>
+                            <th>TEST_SCORE</th>
+
                             <th>1ST_TEST</th>
                             <th>2DO_TEST</th>
                             <th>3ER_TEST</th>
                             <th>PLATAFORMA_Y_TAREAS</th>
                             <th>FINAL_SCORE</th>
                             <th>EDITAR</th>
+                            <th>PARTICIPATION</th>
+                            <th>UNDERSTANDING_OF_CONCEPTS_PRINCIPLES</th>
+                            <th>APPLICATION_OF_CONCEPTS</th>
+                            <th>PRESENTATION_SKILL</th>
+                            <th>TEST_SCORE</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -58,24 +81,44 @@
                                 <td>{{$calificacion->workbook}}</td>
                                 <td>{{$calificacion->icInicialPlataformaYtareas}}</td>
                                 <td>{{$calificacion->icInicialFinalScore}}</td>
+                                <td>{{$calificacion->icInicialParticipation}}</td>
+                                <td>{{$calificacion->icInicialUnderstanding}}</td>
+                                <td>{{$calificacion->icInicialApplication}}</td>
+                                <td>{{$calificacion->icInicialPresentation}}</td>
+                                <td>{{$calificacion->icInicialTestScore}}</td>
 
                                 <td>{{$calificacion->icbSuperior1stTest}}</td>
                                 <td>{{$calificacion->icbSuperior2stTest}}</td>
                                 <td>{{$calificacion->icbSuperior3stTest}}</td>
                                 <td>{{$calificacion->icbSuperiorPlataformaYtareas}}</td>
                                 <td>{{$calificacion->icbSuperiorFinalScore}}</td>
+                                <td>{{$calificacion->icbSuperiorParticipation}}</td>
+                                <td>{{$calificacion->icbSuperiorUnderstanding}}</td>
+                                <td>{{$calificacion->icbSuperiorApplication}}</td>
+                                <td>{{$calificacion->icbSuperiorPresentation}}</td>
+                                <td>{{$calificacion->icbSuperiorTestScore}}</td>
 
                                 <td>{{$calificacion->icpIntermedio1stTest}}</td>
                                 <td>{{$calificacion->icpIntermedio2stTest}}</td>
                                 <td>{{$calificacion->icpIntermedio3stTest}}</td>
                                 <td>{{$calificacion->icpIntermedioPlataformaYtareas}}</td>
                                 <td>{{$calificacion->icpIntermedioFinalScore}}</td>
+                                <td>{{$calificacion->icpIntermedioParticipation}}</td>
+                                <td>{{$calificacion->icpIntermedioUnderstanding}}</td>
+                                <td>{{$calificacion->icpIntermedioApplication}}</td>
+                                <td>{{$calificacion->icpIntermedioPresentation}}</td>
+                                <td>{{$calificacion->icpIntermedioTestScore}}</td>
 
                                 <td>{{$calificacion->icIntermedio1stTest}}</td>
                                 <td>{{$calificacion->icIntermedio2stTest}}</td>
                                 <td>{{$calificacion->icIntermedio3stTest}}</td>
                                 <td>{{$calificacion->icIntermedioPlataformaYtareas}}</td>
                                 <td>{{$calificacion->icIntermedioFinalScore}}</td>
+                                <td>{{$calificacion->icIntermedioParticipation}}</td>
+                                <td>{{$calificacion->icIntermedioUnderstanding}}</td>
+                                <td>{{$calificacion->icIntermedioApplication}}</td>
+                                <td>{{$calificacion->icIntermedioPresentation}}</td>
+                                <td>{{$calificacion->icIntermedioTestScore}}</td>
 
                                 <td><a href="{{route('calificaciones.edit', $calificacion->id)}}" class="btn btn-info">Editar</a></td>
 

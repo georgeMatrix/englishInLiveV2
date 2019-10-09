@@ -73,6 +73,28 @@
                                         </div>
                                     </div>
 
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icInicialParticipation" name="icInicialParticipation" placeholder="Participation">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icInicialUnderstanding" name="icInicialUnderstanding" placeholder="Understanding of concepts principles">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icInicialApplication" name="icInicialApplication" placeholder="Application of concepts">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icInicialPresentation" name="icInicialPresentation" placeholder="Presentation Skill">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icInicialTestScore" name="icInicialTestScore" placeholder="Test Score">
+                                        </div>
+                                    </div>
+
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                         <button type="submit" class="btn btn-info" id="inglesComunicativoInicialBtn">Guardar</button>
@@ -105,6 +127,29 @@
                                             <input readonly type="text" class="form-control form-control-user" id="icbSuperiorFinalScore" onfocusout="sumatoriaIcBs()" name="icbSuperiorFinalScore" placeholder="Final Score">
                                         </div>
                                     </div>
+
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icbSuperiorParticipation" name="icbSuperiorParticipation" placeholder="Participation">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icbSuperiorUnderstanding" name="icbSuperiorUnderstanding" placeholder="Understanding of concepts principles">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icbSuperiorApplication" name="icbSuperiorApplication" placeholder="Application of concepts">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icbSuperiorPresentation" name="icbSuperiorPresentation" placeholder="Presentation Skill">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icbSuperiorTestScore" name="icbSuperiorTestScore" placeholder="Test Score">
+                                        </div>
+                                    </div>
+
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <button type="submit" class="btn btn-info" id="inglesComunicativoInicialBtn">Guardar</button>
@@ -134,6 +179,28 @@
                                         </div>
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <input readonly type="text" class="form-control form-control-user" id="icpIntermedioFinalScore" onfocusout="sumatoriaIcpi()" name="icpIntermedioFinalScore" placeholder="Final Score">
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icpIntermedioParticipation" name="icpIntermedioParticipation" placeholder="Participation">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icpIntermedioUnderstanding" name="icpIntermedioUnderstanding" placeholder="Understanding of concepts principles">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icpIntermedioApplication" name="icpIntermedioApplication" placeholder="Application of concepts">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icpIntermedioPresentation" name="icpIntermedioPresentation" placeholder="Presentation Skill">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icpIntermedioTestScore" name="icpIntermedioTestScore" placeholder="Test Score">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -168,6 +235,29 @@
                                             <input readonly type="text" class="form-control form-control-user" id="icIntermedioFinalScore" onfocusout="sumatoriaIci()" name="icIntermedioFinalScore" placeholder="Final Score">
                                         </div>
                                     </div>
+
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icIntermedioParticipation" name="icIntermedioParticipation" placeholder="Participation">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icIntermedioUnderstanding" name="icIntermedioUnderstanding" placeholder="Understanding of concepts principles">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icIntermedioApplication" name="icIntermedioApplication" placeholder="Application of concepts">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icIntermedioPresentation" name="icIntermedioPresentation" placeholder="Presentation Skill">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" id="icIntermedioTestScore" name="icIntermedioTestScore" placeholder="Test Score">
+                                        </div>
+                                    </div>
+
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <button type="submit" class="btn btn-info" id="inglesComunicativoInicialBtn">Guardar</button>

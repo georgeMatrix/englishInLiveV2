@@ -74,6 +74,28 @@
                                         </div>
                                     </div>
 
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icInicialParticipation}}" id="icInicialParticipation" name="icInicialParticipation" placeholder="Participation">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icInicialUnderstanding}}" id="icInicialUnderstanding" name="icInicialUnderstanding" placeholder="Understanding of concepts principles">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icInicialApplication}}" id="icInicialApplication" name="icInicialApplication" placeholder="Application of concepts">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icInicialPresentation}}" id="icInicialPresentation" name="icInicialPresentation" placeholder="Presentation Skill">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icInicialTestScore}}" id="icInicialTestScore" name="icInicialTestScore" placeholder="Test Score">
+                                        </div>
+                                    </div>
+
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <button type="submit" class="btn btn-info" id="inglesComunicativoInicialBtn">Actualizar</button>
@@ -104,6 +126,28 @@
                                         </div>
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <input readonly type="text" class="form-control form-control-user" value="{{$calificacion->icbSuperiorFinalScore}}" id="icbSuperiorFinalScore" onfocusout="sumatoriaIcBs()" name="icbSuperiorFinalScore" placeholder="Final Score">
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icbSuperiorParticipation}}" id="icbSuperiorParticipation" name="icbSuperiorParticipation" placeholder="Participation">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icbSuperiorUnderstanding}}" id="icbSuperiorUnderstanding" name="icbSuperiorUnderstanding" placeholder="Understanding of concepts principles">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icbSuperiorApplication}}" id="icbSuperiorApplication" name="icbSuperiorApplication" placeholder="Application of concepts">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icbSuperiorPresentation}}" id="icbSuperiorPresentation" name="icbSuperiorPresentation" placeholder="Presentation Skill">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icbSuperiorTestScore}}" id="icbSuperiorTestScore" name="icbSuperiorTestScore" placeholder="Test Score">
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -137,6 +181,28 @@
                                             <input readonly type="text" class="form-control form-control-user" value="{{$calificacion->icpIntermedioFinalScore}}" id="icpIntermedioFinalScore" onfocusout="sumatoriaIcpi()" name="icpIntermedioFinalScore" placeholder="Final Score">
                                         </div>
                                     </div>
+
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icpIntermedioParticipation}}" id="icpIntermedioParticipation" name="icpIntermedioParticipation" placeholder="Participation">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icpIntermedioUnderstanding}}" id="icpIntermedioUnderstanding" name="icpIntermedioUnderstanding" placeholder="Understanding of concepts principles">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icpIntermedioApplication}}" id="icpIntermedioApplication" name="icpIntermedioApplication" placeholder="Application of concepts">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icpIntermedioPresentation}}" id="icpIntermedioPresentation" name="icpIntermedioPresentation" placeholder="Presentation Skill">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icpIntermedioTestScore}}" id="icpIntermedioTestScore" name="icpIntermedioTestScore" placeholder="Test Score">
+                                        </div>
+                                    </div>
                                     <div class="form-group row">
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <button type="submit" class="btn btn-info" id="inglesComunicativoInicialBtn">Actualizar</button>
@@ -167,6 +233,28 @@
                                         </div>
                                         <div class="col-sm-6 mb-3 mb-sm-0">
                                             <input readonly type="text" class="form-control form-control-user" value="{{$calificacion->icIntermedioFinalScore}}" id="icIntermedioFinalScore" onfocusout="sumatoriaIci()" name="icIntermedioFinalScore" placeholder="Final Score">
+                                        </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icIntermedioParticipation}}" id="icIntermedioParticipation" name="icIntermedioParticipation" placeholder="Participation">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icIntermedioUnderstanding}}" id="icIntermedioUnderstanding" name="icIntermedioUnderstanding" placeholder="Understanding of concepts principles">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icIntermedioApplication}}" id="icIntermedioApplication" name="icIntermedioApplication" placeholder="Application of concepts">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icIntermedioPresentation}}" id="icIntermedioPresentation" name="icIntermedioPresentation" placeholder="Presentation Skill">
+                                        </div>
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" value="{{$calificacion->icIntermedioTestScore}}" id="icIntermedioTestScore" name="icIntermedioTestScore" placeholder="Test Score">
                                         </div>
                                     </div>
                                     <div class="form-group row">
