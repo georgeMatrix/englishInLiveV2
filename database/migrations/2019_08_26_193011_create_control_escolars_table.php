@@ -29,6 +29,7 @@ class CreateControlEscolarsTable extends Migration
             $table->string('horario');
             $table->string('modulosAcreditados');
             $table->string('nombreCompleto');
+            $table->enum('status', ['active', 'inactive'])->default('active');
             $table->timestamps();
         });
     }

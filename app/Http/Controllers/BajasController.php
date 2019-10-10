@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Bajas;
+use App\ControlEscolar;
 use Illuminate\Http\Request;
 
 class BajasController extends Controller
@@ -14,7 +15,8 @@ class BajasController extends Controller
      */
     public function index()
     {
-        return view('bajas/bajas');
+        $registros = ControlEscolar::orderBy('id', 'DESC')->paginate(10);
+        return view('bajas/bajas')->with('registros', $registros);
     }
 
     /**
@@ -81,5 +83,16 @@ class BajasController extends Controller
     public function destroy(Bajas $bajas)
     {
         //
+    }
+
+    public function darDeBaja($id)
+    {
+        //$controlEscolar = $request->except(['_token', '_method']);
+        //ControlEscolar::where('id', '=', $id)->update($controlEscolar);
+        //return redirect('controlEscolar');
+return $id;
+        /*$rgTerm = ControlEscolar::find($id);
+        $rgTerm->status = 'inactive';
+        $rgTerm->save();*/
     }
 }
