@@ -87,12 +87,16 @@ class BajasController extends Controller
 
     public function darDeBaja($id)
     {
-        //$controlEscolar = $request->except(['_token', '_method']);
-        //ControlEscolar::where('id', '=', $id)->update($controlEscolar);
-        //return redirect('controlEscolar');
-return $id;
-        /*$rgTerm = ControlEscolar::find($id);
-        $rgTerm->status = 'inactive';
-        $rgTerm->save();*/
+        $bajas = ControlEscolar::find($id);
+        $bajas->status = 'inactive';
+        $bajas->save();
+        return response()->json(['status' => $bajas->status, 'id'=> $bajas->id]);
+    }
+
+    public function darDeBajaCount()
+    {
+        $countBajas = ControlEscolar::all()->count();
+        $bajas = ControlEscolar::all();
+        return response()->json(['bajas' => $bajas, 'countBajas' => $countBajas]);
     }
 }

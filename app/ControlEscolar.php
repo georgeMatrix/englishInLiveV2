@@ -22,4 +22,8 @@ class ControlEscolar extends Model
         'modulosAcreditados',
         'nombreCompleto'
     ];
+
+    public static function activos(){
+        return ControlEscolar::where('status', '=', 'active');
+    }
 }

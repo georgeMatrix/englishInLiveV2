@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('darDeBaja/{id}', 'BajasController@darDeBaja');
+Route::get('darDeBaja', 'BajasController@darDeBajaCount');

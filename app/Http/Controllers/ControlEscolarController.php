@@ -15,7 +15,7 @@ class ControlEscolarController extends Controller
      */
     public function index()
     {
-        $registros = ControlEscolar::orderBy('id', 'DESC')->paginate(10);
+        $registros = ControlEscolar::activos()->orderBy('id', 'DESC')->paginate(10);
         return view('controlEscolar/controlEscolar')->with('registros', $registros);
     }
 

@@ -119,7 +119,6 @@
                                 <td>{{$calificacion->icIntermedioApplication}}</td>
                                 <td>{{$calificacion->icIntermedioPresentation}}</td>
                                 <td>{{$calificacion->icIntermedioTestScore}}</td>
-
                                 <td><a href="{{route('calificaciones.edit', $calificacion->id)}}" class="btn btn-info">Editar</a></td>
 
                             </tr>
