@@ -14,7 +14,9 @@ class CertificacionesController extends Controller
      */
     public function index()
     {
-        return view('certificaciones/certificaciones');
+        $certificaciones = Certificaciones::orderBy('id', 'DESC')->paginate('10');
+        return view('certificaciones/certificaciones')
+            ->with('certificaciones', $certificaciones);
     }
 
     /**
