@@ -23,7 +23,6 @@
                             <th>RESULTADO</th>
                             <th>RESULTADO_GENERAL</th>
                             <th>CEFR_LEVEL</th>
-                            <th>FECHA_DE_LA_CERTIFICACION</th>
                             <th>READING_SCORE</th>
                             <th>WRITING_SCORE</th>
                             <th>LISTENING_SCORE</th>
@@ -38,12 +37,11 @@
                             <tr>
                                 <td>{{$certificacion->id}}</td>
                                 <td>{{$certificacion->nombre}}</td>
-                                <td>{{$certificacion->fechaDeCertificacion}}</td>
+                                <td>{{$certificacion->fechaCertificacion}}</td>
                                 <td>{{$certificacion->entidad}}</td>
                                 <td>{{$certificacion->resultado}}</td>
                                 <td>{{$certificacion->resultadoGeneral}}</td>
                                 <td>{{$certificacion->cefrLevel}}</td>
-                                <td>{{$certificacion->fechaCertificacion}}</td>
                                 <td>{{$certificacion->readingScore}}</td>
                                 <td>{{$certificacion->writingScore}}</td>
                                 <td>{{$certificacion->listeningScore}}</td>

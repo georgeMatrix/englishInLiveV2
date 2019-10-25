@@ -88,7 +88,11 @@ class BajasController extends Controller
     public function darDeBaja($id)
     {
         $bajas = ControlEscolar::find($id);
-        $bajas->status = 'inactive';
+        if ($bajas->status == 'inactive'){
+            $bajas->status = 'active';
+        }else{
+            $bajas->status = 'inactive';
+        }
         $bajas->save();
         return response()->json(['status' => $bajas->status, 'id'=> $bajas->id]);
     }

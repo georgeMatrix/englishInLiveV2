@@ -37,7 +37,8 @@ class CertificacionesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Certificaciones::create($request->all());
+        return redirect('certificaciones');
     }
 
     /**
@@ -57,9 +58,11 @@ class CertificacionesController extends Controller
      * @param  \App\Certificaciones  $certificaciones
      * @return \Illuminate\Http\Response
      */
-    public function edit(Certificaciones $certificaciones)
+    public function edit($id)
     {
-        //
+        $certificacion = Certificaciones::find($id);
+        return view('certificaciones/certificacionesEdit')
+            ->with('certificacion', $certificacion);
     }
 
     /**
@@ -69,9 +72,11 @@ class CertificacionesController extends Controller
      * @param  \App\Certificaciones  $certificaciones
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Certificaciones $certificaciones)
+    public function update(Request $request, $id)
     {
-        //
+        $certificacion = $request->except(['_token', '_method']);
+        Certificaciones::where('id', '=', $id)->update($certificacion);
+        return redirect('certificaciones');
     }
 
     /**

@@ -96,8 +96,11 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <button type="submit" class="btn btn-info" id="inglesComunicativoInicialBtn">Guardar</button>
+                                        <div class="col-sm-2 mb-3 mb-sm-0">
+                                            <button class="btn btn-primary" type="submit">Guardar Datos</button>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-md-2 col-xs-2">
+                                            <a class="btn btn-danger btn-block" href="{{route('calificaciones.index')}}" >Regresar</a>
                                         </div>
                                     </div>
 
@@ -151,8 +154,11 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <button type="submit" class="btn btn-info" id="inglesComunicativoInicialBtn">Guardar</button>
+                                        <div class="col-sm-2 mb-3 mb-sm-0">
+                                            <button class="btn btn-primary" type="submit">Guardar Datos</button>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-md-2 col-xs-2">
+                                            <a class="btn btn-danger btn-block" href="{{route('calificaciones.index')}}" >Regresar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -204,8 +210,11 @@
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <button type="submit" class="btn btn-info" id="inglesComunicativoInicialBtn">Guardar</button>
+                                        <div class="col-sm-2 mb-3 mb-sm-0">
+                                            <button class="btn btn-primary" type="submit">Guardar Datos</button>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-md-2 col-xs-2">
+                                            <a class="btn btn-danger btn-block" href="{{route('calificaciones.index')}}" >Regresar</a>
                                         </div>
                                     </div>
                                 </div>
@@ -259,8 +268,11 @@
                                     </div>
 
                                     <div class="form-group row">
-                                        <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <button type="submit" class="btn btn-info" id="inglesComunicativoInicialBtn">Guardar</button>
+                                        <div class="col-sm-2 mb-3 mb-sm-0">
+                                            <button class="btn btn-primary" type="submit">Guardar Datos</button>
+                                        </div>
+                                        <div class="col-lg-2 col-md-2 col-md-2 col-xs-2">
+                                            <a class="btn btn-danger btn-block" href="{{route('calificaciones.index')}}" >Regresar</a>
                                         </div>
                                     </div>
                                 </div>

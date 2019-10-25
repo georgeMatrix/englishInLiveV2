@@ -15,7 +15,8 @@
                         <tr>
                             <th>NO.</th>
                             <th>COLEGIATURAS</th>
-                            <th>MESES</th>
+                            <th>NOMBRE_DEL_ALUMNO</th>
+                            <th>FECHA</th>
                             <th>INSCRIPCION</th>
                             <th>LIBROS</th>
                             <th>CERTIFICADO SEP</th>
@@ -27,7 +28,8 @@
                             <tr>
                                 <td>{{$colegiatura->id}}</td>
                                 <td>{{$colegiatura->colegiaturas}}</td>
-                                <td>{{$colegiatura->meses}}</td>
+                                <td>{{$colegiatura->nombreAlumno}}</td>
+                                <td>{{$colegiatura->fecha}}</td>
                                 <td>{{$colegiatura->inscripcion}}</td>
                                 <td>{{$colegiatura->libros}}</td>
                                 <td>{{$colegiatura->certificadoSep}}</td>

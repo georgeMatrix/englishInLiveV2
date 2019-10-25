@@ -6,9 +6,6 @@
             <div class="col-lg-12">
                 <h1 class="text-center title">NUEVO</h1>
             </div>
-            <div class="col-lg-2 col-md-2 col-md-2 col-xs-2 offset-xl-10 offset-md-10 offset-xs-10 mb-3">
-                <a class="btn btn-danger btn-block" href="{{route('certificaciones.index')}}" >Regresar</a>
-            </div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-xl-12 mb-4">
@@ -16,69 +13,58 @@
                     {{csrf_field()}}
                     <div class="form-group row">
                         <div class="col-sm-6 mb-3 mb-sm-0">
-                            <input type="text" class="form-control form-control-user" id="grupo" name="grupo" placeholder="Grupo">
+                            <input type="text" class="form-control form-control-user" id="nombre" name="nombre" placeholder="Nombre">
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control form-control-user" id="escolaridad" name="escolaridad" placeholder="Escolaridad">
+                            <input type="text" class="form-control form-control-user" id="fechaCertificacion" name="fechaCertificacion" placeholder="Fecha de certificación">
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6 mb-3 mb-sm-0">
-                            <input type="text" class="form-control form-control-user" id="noControl" name="noControl" placeholder="No. de control">
+                            <input type="text" class="form-control form-control-user" id="entidad" name="entidad" placeholder="Entidad">
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control form-control-user" id="cicloEscolar" name="cicloEscolar" placeholder="Ciclo escolar">
+                            <input type="text" class="form-control form-control-user" id="resultado" name="resultado" placeholder="Resultado">
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6 mb-3 mb-sm-0">
-                            <input type="number" class="form-control form-control-user" id="edad" name="edad" placeholder="Edad">
+                            <input type="text" class="form-control form-control-user" id="resultadoGeneral" name="resultadoGeneral" placeholder="Resultado General">
                         </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control form-control-user" id="incorporados" name="incorporados" placeholder="Incorporados">
+                            <input type="text" class="form-control form-control-user" id="cefrLevel" name="cefrLevel" placeholder="CEFR Level">
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-6 mb-3 mb-sm-0">
-                            <input type="text" class="form-control form-control-user" id="sexo" name="sexo" placeholder="Sexo">
+                            <input type="text" class="form-control form-control-user" id="readingScore" name="readingScore" placeholder="Reading Score">
                         </div>
                         <div class="col-sm-6 mb-3 mb-sm-0">
-                            <select name="niveles" id="niveles" class="form-control form-control-user">
-                                <option value="">Seleccione una opción</option>
-                                <option value="1">Ingles Comunicativo</option>
-                                <option value="2">Ingles Comunicativo Superior</option>
-                                <option value="3">Ingles Preintermedio</option>
-                                <option value="4">Ingles Intermedio</option>
-                            </select>
+                            <input type="text" class="form-control form-control-user" id="writingScore" name="writingScore" placeholder="Writing Score">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                            <input type="text" class="form-control form-control-user" id="maestro" name="maestro" placeholder="Maestro">
-                        </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control form-control-user" id="horarioSep" name="horarioSep" placeholder="Horario SEP">
+                            <input type="text" class="form-control form-control-user" id="listeningScore" name="listeningScore" placeholder="Listening Score">
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <input type="text" class="form-control form-control-user" id="speakingScore" name="speakingScore" placeholder="Speaking Score">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                            <input type="text" class="form-control form-control-user" id="curp" name="curp" placeholder="CURP">
-                        </div>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control form-control-user" id="horario" name="horario" placeholder="Horario">
+                            <input type="text" class="form-control form-control-user" id="cambridgeEnglishScale" name="cambridgeEnglishScale" placeholder="Cambridge English Scale">
+                        </div>
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <input type="text" class="form-control form-control-user" id="certificateResult" name="certificateResult" placeholder="Certificate Result">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
-                            <input type="text" class="form-control form-control-user" id="modulosAcreditados" name="modulosAcreditados" placeholder="Modulos Acreditados">
-                        </div>
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control form-control-user" id="nombreCompleto" name="nombreCompleto" placeholder="Nombre Completo">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="col-sm-2 mb-3 mb-sm-0">
                             <button class="btn btn-primary" type="submit">Guardar Datos</button>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-md-2 col-xs-2">
+                            <a class="btn btn-danger btn-block" href="{{route('certificaciones.index')}}" >Regresar</a>
                         </div>
                     </div>
                 </form>

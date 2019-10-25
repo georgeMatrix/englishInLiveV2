@@ -6,9 +6,6 @@
             <div class="col-lg-12">
                 <h1 class="text-center title">BAJAS</h1>
             </div>
-            <div class="col-lg-2 col-md-2 col-md-2 col-xs-2 offset-xl-10 offset-md-10 offset-xs-10 mb-3">
-                <a class="btn btn-success btn-block" href="#" >CATALOGO</a>
-            </div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-xl-12">
@@ -81,11 +78,12 @@
                 .then(function(response){
                     console.log(response.bajas[0].status)
 
-                    for(let i = 0; i < response.countBajas; i++){
+                    for(var i = 0; i < response.countBajas; i++){
                         //console.log(response.bajas[2].status)
                         count = i+1;
                         if (response.bajas[i].status == 'active'){
                             $("#btnBaja"+count).addClass('btn-success');
+                            $("#btnBaja"+count).text('Activo')
                         } else{
                             $("#btnBaja"+count).addClass('btn-danger');
                         }
@@ -100,8 +98,14 @@
                                     $("#btnBaja"+response.id).addClass('btn-danger');
                                     if (response.status == 'active') {
                                         $("#status"+response.id).text('Activo');
+                                        $("#btnBaja"+response.id).text('Activo')
+                                        $("#btnBaja"+response.id).addClass('btn-success');
+                                        $("#btnBaja"+response.id).removeClass('btn-danger');
                                     }else{
                                         $("#status"+response.id).text('Baja');
+                                        $("#btnBaja"+response.id).text('Baja');
+                                        $("#btnBaja"+response.id).addClass('btn-danger');
+                                        $("#btnBaja"+response.id).removeClass('btn-success');
                                     }
 
                                 })

@@ -6,9 +6,6 @@
             <div class="col-lg-12">
                 <h1 class="text-center title">NUEVO BASE DE DATOS</h1>
             </div>
-            <div class="col-lg-2 col-md-2 col-md-2 col-xs-2 offset-xl-10 offset-md-10 offset-xs-10 mb-3">
-                <a class="btn btn-danger btn-block" href="{{route('baseDeDatos.index')}}" >Regresar</a>
-            </div>
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-xl-12 mb-4">
@@ -101,8 +98,11 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="col-sm-2 mb-3 mb-sm-0">
                             <button class="btn btn-primary" type="submit">Guardar Datos</button>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-md-2 col-xs-2">
+                            <a class="btn btn-danger btn-block" href="{{route('baseDeDatos.index')}}" >Regresar</a>
                         </div>
                     </div>
                 </form>

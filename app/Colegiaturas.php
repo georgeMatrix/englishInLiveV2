@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Colegiaturas extends Model
 {
-    protected $fillable = ['colegiaturas', 'meses', 'inscripcion', 'libros', 'certificadoSep'];
+    protected $fillable = ['colegiaturas', 'fecha', 'nombreAlumno', 'inscripcion', 'libros', 'certificadoSep'];
 }

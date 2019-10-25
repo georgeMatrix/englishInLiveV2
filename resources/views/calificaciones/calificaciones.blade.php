@@ -6,8 +6,13 @@
             <div class="col-lg-12">
                 <h1 class="text-center title">CALIFICACIONES</h1>
             </div>
-            <div class="col-lg-2 col-md-2 col-md-2 col-xs-2 offset-xl-10 offset-md-10 offset-xs-10 mb-3">
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-md-2 col-xs-2 offset-xl-8 offset-md-8 offset-xs-8 mb-3">
                 <a class="btn btn-success btn-block" href="{{route('calificaciones.create')}}" >NUEVO</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-md-2 col-xs-2 mb-3">
+                <a class="btn btn-success btn-block" href="#" >CATALOGO</a>
             </div>
         </div>
         <div class="row">
@@ -25,13 +30,12 @@
                             <th>3ER_TEST</th>
                             <th>WORKBOOK</th>
                             <th>PLATAFORMA_Y_TAREAS</th>
+                            <th>FINAL_SCORE</th>
                             <th>PARTICIPATION</th>
                             <th>UNDERSTANDING_OF_CONCEPTS_PRINCIPLES</th>
                             <th>APPLICATION_OF_CONCEPTS</th>
                             <th>PRESENTATION_SKILL</th>
                             <th>TEST_SCORE</th>
-
-                            <th>FINAL_SCORE</th>
                             <th>1ST_TEST</th>
                             <th>2DO_TEST</th>
                             <th>3ER_TEST</th>
@@ -59,12 +63,12 @@
                             <th>3ER_TEST</th>
                             <th>PLATAFORMA_Y_TAREAS</th>
                             <th>FINAL_SCORE</th>
+                            <th>PARTICIPATION</th>
+                            <th>UNDERSTANDING_OF_CONCEPTS_PRINCIPLES</th>
+                            <th>APPLICATION_OF_CONCEPTS</th>
+                            <th>PRESENTATION_SKILL</th>
+                            <th>TEST_SCORE</th>
                             <th>EDITAR</th>
-                            <th>PARTICIPATION</th>
-                            <th>UNDERSTANDING_OF_CONCEPTS_PRINCIPLES</th>
-                            <th>APPLICATION_OF_CONCEPTS</th>
-                            <th>PRESENTATION_SKILL</th>
-                            <th>TEST_SCORE</th>
                         </tr>
                         </thead>
                         <tbody>
