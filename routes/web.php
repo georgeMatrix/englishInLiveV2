@@ -30,4 +30,5 @@ Route::resource('calificaciones', 'CalificacionesController')->middleware('auth'
 Route::resource('colegiaturas', 'ColegiaturasController')->middleware('auth');
 Route::resource('certificaciones', 'CertificacionesController')->middleware('auth');
 Route::resource('bajas', 'BajasController')->middleware('auth');
+Route::resource('clientePrueba', 'ClientePruebaController');
 
